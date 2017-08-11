@@ -1,0 +1,14 @@
+﻿@model SonOfCod.Models.Recipient
+@{
+    ViewData["Title"] = "Newsletter Recipient - Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Character Details</h2>
+<hr />
+<p>First Name: @Html.DisplayFor(model => model.firstName)</p>
+<p>Last Name: @Html.DisplayFor(model => model.lastName)</p>
+<p>Email Address: @Html.DisplayFor(model => model.email)</p>
+<p>Phone Number: @Html.DisplayFor(model => model.phone)</p>
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.id }) | @Html.ActionLink("Back to List", "Index")</p>

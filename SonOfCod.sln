@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SonOfCod", "src\SonOfCod\SonOfCod.xproj", "{04A67AC7-E456-4E35-9E0A-8C2BCC623D29}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A0C9ED2C-0550-416A-ABC8-8FB9BB42F1EA}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SonOfCod.Tests", "SonOfCod.Tests\SonOfCod.Tests.xproj", "{AD21DAD1-5D86-481B-9FC1-79B4E538C930}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +27,16 @@ Global
 		{04A67AC7-E456-4E35-9E0A-8C2BCC623D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04A67AC7-E456-4E35-9E0A-8C2BCC623D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04A67AC7-E456-4E35-9E0A-8C2BCC623D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD21DAD1-5D86-481B-9FC1-79B4E538C930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD21DAD1-5D86-481B-9FC1-79B4E538C930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD21DAD1-5D86-481B-9FC1-79B4E538C930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD21DAD1-5D86-481B-9FC1-79B4E538C930}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{04A67AC7-E456-4E35-9E0A-8C2BCC623D29} = {3C1317C2-F772-41E9-AA2F-642B2EE05C4D}
+		{AD21DAD1-5D86-481B-9FC1-79B4E538C930} = {A0C9ED2C-0550-416A-ABC8-8FB9BB42F1EA}
 	EndGlobalSection
 EndGlobal

@@ -23,12 +23,6 @@ This Web Application is designed to display information about the Son of Cod Sea
 	* Microsoft.EntityFrameworkCore.SqlServer Version 1.0.0,
 	* Microsoft.Extensions.Configuration.FileExtensions Version 1.0.0,
 	* Microsoft.Extensions.Configuration.Json Version 1.0.0
-	
-	For our Production Environment and Frontend Interface:
-	* jQuery - as a dependency for bootstrap
-	* npm - for installing bootstrap
-	* gulp - for compiling bootstrap styles
-	* Bootstrap - for basic styles
 
   2. Specifications
 
@@ -45,7 +39,7 @@ This Web Application is designed to display information about the Son of Cod Sea
   * HomeController.cs - for routing and file integration.
   * User.cs - Our Object Model
   * SonOfCodContext.cs - for Database Configuration
-  * 20170804200356_Initial.cs - for Database Migration
+  * 20170811180729_Initial.cs - for Database Migration
   * Index.cshtml - our home page
   * List.cshtml - a page for listing our users
   * Details.cshtml - a page for viewing the details of a given user

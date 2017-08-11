@@ -34,21 +34,25 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Recipient" asp-action="Index">Recipient</a></li>
+                    <li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <p>Hello @User.Identity.Name!</p>
+                            @using (Html.BeginForm("LogOff", "Account"))
+                            {
+                                <input type="submit" class="btn btn-default" value="Log out" />
+                            }
+                        }
+                        else
+                        {
+                            <p>@Html.ActionLink("Register", "Register", "Account")</p>
+                            <p>@Html.ActionLink("Log in", "Login", "Account")</p>
+                        }
+                    </li>
                 </ul>
                 <div class="login">
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <p>Hello @User.Identity.Name!</p>
-                        @using (Html.BeginForm("LogOff", "Account"))
-                        {
-                            <input type="submit" class="btn btn-default" value="Log out" />
-                        }
-                    }
-                    else
-                    {
-                        <p>@Html.ActionLink("Register", "Register", "Account")</p>
-                        <p>@Html.ActionLink("Log in", "Login", "Account")</p>
-                    }
+                    
                 </div>
             </div>
         </div>

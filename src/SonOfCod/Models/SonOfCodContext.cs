@@ -18,7 +18,9 @@ namespace SonOfCod.Models
         public SonOfCodContext()
         {
         }
-
+        
+        public DbSet<Newsletter> Newsletters { get; set; }
+        public DbSet<Recipient> Recipients { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

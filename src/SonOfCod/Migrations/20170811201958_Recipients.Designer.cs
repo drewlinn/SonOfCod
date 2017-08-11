@@ -8,9 +8,10 @@ using SonOfCod.Models;
 namespace SonOfCod.Migrations
 {
     [DbContext(typeof(SonOfCodContext))]
-    partial class SonOfCodContextModelSnapshot : ModelSnapshot
+    [Migration("20170811201958_Recipients")]
+    partial class Recipients
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -170,22 +171,6 @@ namespace SonOfCod.Migrations
                         .HasName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
-                });
-
-            modelBuilder.Entity("SonOfCod.Models.Newsletter", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("authorId");
-
-                    b.Property<DateTime>("date");
-
-                    b.Property<string>("letter");
-
-                    b.HasKey("id");
-
-                    b.ToTable("Newsletters");
                 });
 
             modelBuilder.Entity("SonOfCod.Models.Recipient", b =>

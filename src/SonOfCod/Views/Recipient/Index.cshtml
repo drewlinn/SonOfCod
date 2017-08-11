@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SonOfCod.Models.Recipient>
+
+@{
+    ViewData["Title"] = "Newsletter Recipients - Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Son Of Cod Newsletter Recipients</h2>
+<hr />
+<p>
+    @Html.ActionLink("Add New Character", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var rec in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => rec.firstName) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => rec.lastName) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => rec.email) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => rec.phone) --
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = cha.id })
+                @Html.ActionLink("Details", "Details", new { id = cha.id })
+                @Html.ActionLink("Delete", "Delete", new { id = cha.id })
+            </td>
+        </tr>
+
+    }
+</table>
