@@ -43,10 +43,15 @@
                 @Html.DisplayFor(model => nl.authorId) --
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = nl.id })
                 @Html.ActionLink("Details", "Details", new { id = nl.id })
-                @Html.ActionLink("Delete", "Delete", new { id = nl.id })
             </td>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = nl.id })
+                    @Html.ActionLink("Delete", "Delete", new { id = nl.id })
+                </td>
+            }
         </tr>
 
     }

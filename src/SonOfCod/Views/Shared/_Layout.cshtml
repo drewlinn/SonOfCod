@@ -35,13 +35,13 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                     <li><a asp-area="" asp-controller="Newsletter" asp-action="Index">Newsletter</a></li>
-                    <li><a asp-area="" asp-controller="Recipient" asp-action="Index">Recipient</a></li>
                     <li>
                         @if (User.Identity.IsAuthenticated)
                         {
                             <p>Hello @User.Identity.Name!</p>
                             @using (Html.BeginForm("LogOff", "Account"))
                             {
+                                <p>@Html.ActionLink("View Mailing List", "Index", "Recipient")</p>
                                 <input type="submit" class="btn btn-default" value="Log out" />
                             }
                         }
