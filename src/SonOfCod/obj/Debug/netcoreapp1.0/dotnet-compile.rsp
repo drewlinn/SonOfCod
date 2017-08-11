@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\bin\Debug\netcoreapp1.0\SonOfCod.dll
+--temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\bin\Debug\netcoreapp1.0\SonOfCod.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -211,22 +211,25 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Program.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Startup.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Controllers\HomeController.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Controllers\RecipientController.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\20170811180729_Initial.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\20170811180729_Initial.Designer.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\20170811201958_Recipients.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\20170811201958_Recipients.Designer.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\20170811205302_Newsletters.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\20170811205302_Newsletters.Designer.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Migrations\SonOfCodContextModelSnapshot.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Models\Newsletter.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Models\Recipient.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\Models\SonOfCodContext.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
-C:\Users\epicodus\documents\Visual Studio 2015\projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs
+--resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Startup.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\NewsletterController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\RecipientController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811180729_Initial.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811180729_Initial.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811201958_Recipients.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811201958_Recipients.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811205302_Newsletters.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811205302_Newsletters.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811211337_AlterNewslettersTable.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811211337_AlterNewslettersTable.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\SonOfCodContextModelSnapshot.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Newsletter.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Recipient.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\SonOfCodContext.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs

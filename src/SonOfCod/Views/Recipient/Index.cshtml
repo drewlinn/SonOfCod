@@ -8,7 +8,7 @@
 <h2>Son Of Cod Newsletter Recipients</h2>
 <hr />
 <p>
-    @Html.ActionLink("Add New Character", "Create")
+    @Html.ActionLink("Add New Recipient", "Create")
 </p>
 <table>
     <tr>
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(model => rec.phone) --
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = cha.id })
-                @Html.ActionLink("Details", "Details", new { id = cha.id })
-                @Html.ActionLink("Delete", "Delete", new { id = cha.id })
+                @Html.ActionLink("Edit", "Edit", new { id = rec.id })
+                @Html.ActionLink("Details", "Details", new { id = rec.id })
+                @Html.ActionLink("Delete", "Delete", new { id = rec.id })
             </td>
         </tr>
 

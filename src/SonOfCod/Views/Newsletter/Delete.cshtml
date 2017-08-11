@@ -1,0 +1,25 @@
+﻿
+@model SonOfCod.Models.Recipient
+
+@{
+    ViewData["Title"] = "Newsletter Recipient - Unsubscribe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Are you sure you want to Unsubscribe from our Newsletter?</h2>
+
+
+@Html.DisplayNameFor(model => model.firstName) : @Html.DisplayFor(model => model.firstName)
+@Html.DisplayNameFor(model => model.lastName) : @Html.DisplayFor(model => model.lastName)
+@Html.DisplayNameFor(model => model.phone) : @Html.DisplayFor(model => model.phone)
+@Html.DisplayNameFor(model => model.email) : @Html.DisplayFor(model => model.email)
+
+
+
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+
+<p>@Html.ActionLink("Back to home", "Index")</p>

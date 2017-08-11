@@ -1,0 +1,26 @@
+﻿
+@model SonOfCod.Models.Newsletter
+@{
+    ViewData["Title"] = "Newsletter - Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sign Up for the Newsletter</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.title)
+    @Html.EditorFor(model => model.title)
+
+    @Html.LabelFor(model => model.letter)
+    @Html.EditorFor(model => model.letter)
+
+    @Html.LabelFor(model => model.authorId)
+    @Html.EditorFor(model => model.authorId)
+
+    @Html.LabelFor(model => model.date)
+    @Html.EditorFor(model => model.date)
+
+    <input type="submit" value="Create" class="btn btn-default" />
+}
+@Html.ActionLink("Back to List", "Index")

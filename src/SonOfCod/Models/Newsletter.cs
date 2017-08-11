@@ -12,8 +12,9 @@ namespace SonOfCod.Models
     {
         [Key]
         public int id { get; set; }
+        public string title { get; set; }
         public string letter { get; set; }
-        public string authorId { get; set; }
+        public int authorId { get; set; }
         public DateTime date { get; set; }
     }
 }

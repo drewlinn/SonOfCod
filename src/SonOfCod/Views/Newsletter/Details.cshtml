@@ -1,0 +1,14 @@
+﻿@model SonOfCod.Models.Newsletter
+@{
+    ViewData["Title"] = "Newsletter - Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Son Of Cod Newsletter</h2>
+<hr />
+<p>@Html.DisplayFor(model => model.title)</p>
+<p>@Html.DisplayFor(model => model.date)</p>
+<p>@Html.DisplayFor(model => model.letter)</p>
+<p>@Html.DisplayFor(model => model.authorId)</p>
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.id }) | @Html.ActionLink("Back to List", "Index")</p>

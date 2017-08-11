@@ -1,0 +1,30 @@
+﻿
+@model SonOfCod.Models.Newsletter
+@{
+    ViewData["Title"] = "Newsletter - Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit @Html.DisplayFor(model => model.title) @Html.DisplayFor(model => model.date)?</h2>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.id)
+
+    @Html.LabelFor(model => model.title)
+    @Html.EditorFor(model => model.title)
+
+    @Html.LabelFor(model => model.date)
+    @Html.EditorFor(model => model.date)
+
+    @Html.LabelFor(model => model.letter)
+    @Html.EditorFor(model => model.letter)
+
+    @Html.LabelFor(model => model.authorId)
+    @Html.EditorFor(model => model.authorId)
+
+    <input type="submit" value="Save" class="btn btn-primary" />
+}
+
+@Html.ActionLink("Back to List", "Index")

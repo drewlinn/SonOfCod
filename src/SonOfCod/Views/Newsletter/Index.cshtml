@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SonOfCod.Models.Newsletter>
+
+@{
+    ViewData["Title"] = "Newsletter - Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Son Of Cod Newsletters</h2>
+<hr />
+<p>
+    @Html.ActionLink("Add New Newsletter", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.letter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.authorId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var nl in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => nl.title) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => nl.date) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => nl.letter) --
+            </td>
+            <td>
+                @Html.DisplayFor(model => nl.authorId) --
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = nl.id })
+                @Html.ActionLink("Details", "Details", new { id = nl.id })
+                @Html.ActionLink("Delete", "Delete", new { id = nl.id })
+            </td>
+        </tr>
+
+    }
+</table>
