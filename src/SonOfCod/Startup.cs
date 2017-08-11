@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using SonOfCod.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace SonOfCod
 {
@@ -37,6 +41,12 @@ namespace SonOfCod
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
+            services.AddEntityFramework()
+                .AddDbContext<SonOfCodContext>(options =>
+                    options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+               .AddEntityFrameworkStores<SonOfCodContext>()
+               .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +70,7 @@ namespace SonOfCod
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
-
+            app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
