@@ -16,7 +16,7 @@
     @Html.TextAreaFor(model => model.letter, new { cols = 50, @rows = 25 })
 
     @Html.LabelFor(model => model.authorId)
-    @Html.EditorFor(model => model.authorId)
+    @Html.DropDownList("id")
 
     @Html.LabelFor(model => model.date)
     @Html.EditorFor(model => model.date)

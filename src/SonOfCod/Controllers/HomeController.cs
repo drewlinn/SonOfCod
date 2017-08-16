@@ -13,6 +13,11 @@ namespace SonOfCod.Controllers
             return View();
         }
 
+        public IActionResult Marketing()
+        {
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
