@@ -32,5 +32,56 @@ namespace SonOfCod.Tests
             //Assert
             Assert.IsType<List<Newsletter>>(result);
         }
+        [Fact]
+        public void Get_ViewResult_Details_Test()
+        {
+            //Arrange
+            NewsletterController controller = new NewsletterController();
+
+            //Act
+            var newsletter = new Newsletter();
+            var result = controller.Details(newsletter.id);
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+        [Fact]
+        public void Get_ViewResult_Create_Test()
+        {
+            //Arrange
+            NewsletterController controller = new NewsletterController();
+
+            //Act
+            var result = controller.Create();
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+        [Fact]
+        public void Get_ViewResult_Edit_Test()
+        {
+            //Arrange
+            NewsletterController controller = new NewsletterController();
+
+            //Act
+            var newsletter = new Newsletter();
+            var result = controller.Edit(newsletter.id);
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+        [Fact]
+        public void Get_ViewResult_Delete_Test()
+        {
+            //Arrange
+            NewsletterController controller = new NewsletterController();
+
+            //Act
+            var newsletter = new Newsletter();
+            var result = controller.Delete(newsletter.id);
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
     }
 }

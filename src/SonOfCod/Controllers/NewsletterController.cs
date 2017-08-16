@@ -26,9 +26,9 @@ namespace SonOfCod.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Newsletter recipient)
+        public IActionResult Create(Newsletter newsletter)
         {
-            db.Newsletters.Add(recipient);
+            db.Newsletters.Add(newsletter);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -51,9 +51,9 @@ namespace SonOfCod.Controllers
             return View(thisNL);
         }
         [HttpPost]
-        public IActionResult Edit(Newsletter recipient)
+        public IActionResult Edit(Newsletter newsletter)
         {
-            db.Entry(recipient).State = EntityState.Modified;
+            db.Entry(newsletter).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
         }

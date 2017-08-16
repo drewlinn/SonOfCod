@@ -32,5 +32,56 @@ namespace SonOfCod.Tests
             //Assert
             Assert.IsType<List<Recipient>>(result);
         }
+        [Fact]
+        public void Get_ViewResult_Details_Test()
+        {
+            //Arrange
+            RecipientController controller = new RecipientController();
+
+            //Act
+            var recipient = new Recipient();
+            var result = controller.Details(recipient.id);
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+        [Fact]
+        public void Get_ViewResult_Create_Test()
+        {
+            //Arrange
+            RecipientController controller = new RecipientController();
+
+            //Act
+            var result = controller.Create();
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+        [Fact]
+        public void Get_ViewResult_Edit_Test()
+        {
+            //Arrange
+            RecipientController controller = new RecipientController();
+
+            //Act
+            var recipient = new Recipient();
+            var result = controller.Edit(recipient.id);
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+        [Fact]
+        public void Get_ViewResult_Delete_Test()
+        {
+            //Arrange
+            RecipientController controller = new RecipientController();
+
+            //Act
+            var recipient = new Recipient();
+            var result = controller.Delete(recipient.id);
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
     }
 }
