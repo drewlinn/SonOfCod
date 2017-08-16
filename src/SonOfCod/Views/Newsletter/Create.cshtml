@@ -13,7 +13,7 @@
     @Html.EditorFor(model => model.title)
 
     @Html.LabelFor(model => model.letter)
-    @Html.EditorFor(model => model.letter)
+    @Html.TextAreaFor(model => model.letter, new { cols = 50, @rows = 25 })
 
     @Html.LabelFor(model => model.authorId)
     @Html.EditorFor(model => model.authorId)

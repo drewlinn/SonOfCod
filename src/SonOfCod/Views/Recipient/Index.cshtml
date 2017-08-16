@@ -13,16 +13,16 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.firstName)
+            <p>| Last Name | </p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.lastName)
+            <p> First Name | </p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.email)
+            <p> Email Address | </p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.phone)
+            <p> Phone Number |</p>
         </th>
         <th></th>
     </tr>
@@ -31,10 +31,10 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(model => rec.firstName) --
+                @Html.DisplayFor(model => rec.lastName) --
             </td>
             <td>
-                @Html.DisplayFor(model => rec.lastName) --
+                @Html.DisplayFor(model => rec.firstName) --
             </td>
             <td>
                 @Html.DisplayFor(model => rec.email) --
