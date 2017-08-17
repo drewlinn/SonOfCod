@@ -14,7 +14,8 @@ namespace SonOfCod.Models
         public int id { get; set; }
         public string title { get; set; }
         public string letter { get; set; }
-        public int authorId { get; set; }
         public DateTime date { get; set; }
+        public int authorId { get; set; }
+        public virtual Recipient Recipient { get; set; }
     }
 }
