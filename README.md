@@ -64,7 +64,7 @@ This Web Application is designed to display information about the Son of Cod Sea
 
 ## Known Bugs
 
-Buttons in nav bar do not yet work.
+Images in carousel continually resize our carousel.
 
 ## Support and contact details
 

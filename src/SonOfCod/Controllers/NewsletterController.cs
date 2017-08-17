@@ -12,19 +12,17 @@ namespace SonOfCod.Controllers
         private SonOfCodContext db = new SonOfCodContext();
         public IActionResult Index()
         {
-            return View(db.Newsletters.Include(nl => nl.authorId).ToList());
+            return View(db.Newsletters.ToList());
         }
 
         public IActionResult Details(int id)
         {
             var thisNewsletter = db.Newsletters.FirstOrDefault(nl => nl.id == id);
-            thisNewsletter.authorId = db.Recipients.FirstOrDefault(rec => rec.id == thisNewsletter.authorId);
 
             return View(thisNewsletter);
         }
         public IActionResult Create()
         {
-            ViewBag.authorId = new SelectList(db.Recipients, "id", "firstName" + " " + "lastName");
             return View();
         }
         [HttpPost]

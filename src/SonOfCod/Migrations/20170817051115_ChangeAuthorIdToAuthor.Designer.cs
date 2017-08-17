@@ -8,9 +8,10 @@ using SonOfCod.Models;
 namespace SonOfCod.Migrations
 {
     [DbContext(typeof(SonOfCodContext))]
-    partial class SonOfCodContextModelSnapshot : ModelSnapshot
+    [Migration("20170817051115_ChangeAuthorIdToAuthor")]
+    partial class ChangeAuthorIdToAuthor
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")

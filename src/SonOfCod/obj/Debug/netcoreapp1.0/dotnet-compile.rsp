@@ -226,6 +226,8 @@ C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Mi
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811205302_Newsletters.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811211337_AlterNewslettersTable.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811211337_AlterNewslettersTable.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170817051115_ChangeAuthorIdToAuthor.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170817051115_ChangeAuthorIdToAuthor.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\SonOfCodContextModelSnapshot.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Newsletter.cs

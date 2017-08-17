@@ -2,3 +2,12 @@
     ViewData["Title"] = "Marketing";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<p>This is our marketing page where we talk about all the fishy goings-on.</p>
+
+<p>What would you like to do?</p>
+
+<p>Register as a user</p>
+<p>@Html.ActionLink("Register", "Register", "Account")</p>
+<p>Sign up for our Newsletter</p>
+<p>@Html.ActionLink("Sign up", "Create", "Recipient")</p>
